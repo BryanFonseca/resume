@@ -1,0 +1,115 @@
+:root {
+    --main-color: #333;
+    --background-color: #999;
+    --resume-color: #eee;
+    --highlight: #01badf;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.quote {
+    font-style: italic;
+}
+
+.resume h2 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-bottom: 0.14em solid var(--main-color);
+    margin-bottom: 0.8em;
+}
+
+.resume h4 {
+    font-size: 0.8rem;
+}
+
+.resume {
+    background-color: var(--resume-color);
+    border-radius: 0.8em;
+    margin: 1.4em;
+    padding: 2.4em;
+}
+
+.resume header > .name{
+    text-transform: uppercase;
+}
+
+.resume header > .career {
+    margin-top: 0.3em;
+    font-weight: 600;
+}
+
+.resume header > .contacts{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1em;
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 3em;
+}
+
+svg {
+    height: 14px;
+    width: 14px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.time {
+    font-size: 0.7rem;
+}
+
+.experience > li {
+    list-style: disc;
+    margin-left: 1.2em;
+    font-size: 0.8rem;
+}
+
+.name {
+
+}
+
+.columns-layout {
+    margin-top: 1.4em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.columns-layout > .column-left {
+    flex-basis: 60%;
+}
+
+.columns-layout > .column-right {
+    flex-basis: 40%;
+}
+
+.columns-layout > section .column-item + .column-item {
+    margin-top: 2em;
+}
+
+.development-experience > li + li{
+    margin-top: 1em;
+}
