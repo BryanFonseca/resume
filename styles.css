@@ -1,6 +1,6 @@
 :root {
     --main-color: #333;
-    --background-color: #999;
+    --background-color: #78d4b6;
     --resume-color: #eee;
     --highlight: #01badf;
 }
@@ -16,6 +16,8 @@ li {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     font-family: 'Inter', sans-serif;
     color: var(--main-color);
     background-color: var(--background-color);
@@ -34,18 +36,26 @@ body {
     font-size: 1.3rem;
     text-transform: uppercase;
     border-bottom: 0.14em solid var(--main-color);
-    margin-bottom: 0.8em;
+    margin-bottom: 0.6em;
+}
+
+.resume h3 {
+    font-weight: 500;
 }
 
 .resume h4 {
     font-size: 0.8rem;
+    margin-top: 0.15em;
 }
 
 .resume {
+    width: 19cm;
+    height: 29.7cm;
     background-color: var(--resume-color);
     border-radius: 0.8em;
     margin: 1.4em;
     padding: 2.4em;
+    box-shadow: rgba(0, 0, 0, 15%) 0em 0em 1em 0.3em ;
 }
 
 .resume header > .name{
@@ -72,6 +82,7 @@ svg {
 }
 
 .icon-container {
+    margin-top: 0.15em;
     display: flex;
     align-items: center;
     gap: 0.3em;
@@ -110,6 +121,16 @@ svg {
     margin-top: 2em;
 }
 
+.column-item ul {
+    margin-top: 0.3em;
+}
+
+.column-item ul li + li {
+    margin-top: 0.6em;
+}
+
 .development-experience > li + li{
-    margin-top: 1em;
+    border-top: 1px dashed rgba(50, 50, 50, 30%);
+    margin-top: 0.6em;
+    padding-top: 0.6em;
 }
