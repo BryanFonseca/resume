@@ -58,6 +58,16 @@ body {
     box-shadow: rgba(0, 0, 0, 15%) 0em 0em 1em 0.3em ;
 }
 
+@media print {
+    .resume {
+        box-shadow: none;
+        margin: 0;
+        padding: 2.7em;
+        width: auto; /* 21 */
+        height: auto; /* 29.7*/
+    }
+}
+
 .resume header > .name{
     text-transform: uppercase;
 }
@@ -192,5 +202,3 @@ svg {
     font-size: 0.8rem;
     font-weight: 600;
 }
-
-/* TODO: Add media query for printing */
