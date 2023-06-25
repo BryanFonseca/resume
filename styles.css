@@ -52,7 +52,6 @@ body {
     width: 19cm; /* 21 */
     height: 26.81cm; /* 29.7*/
     background-color: var(--resume-color);
-    border-radius: 0.8em;
     margin: 1.4em;
     padding: 2.7em;
     box-shadow: rgba(0, 0, 0, 15%) 0em 0em 1em 0.3em ;
