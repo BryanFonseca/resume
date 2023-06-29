@@ -55,6 +55,7 @@ body {
     margin: 1.4em;
     padding: 2.7em;
     box-shadow: rgba(0, 0, 0, 15%) 0em 0em 1em 0.3em ;
+    position: relative;
 }
 
 @media print {
@@ -200,4 +201,13 @@ svg {
 .volunteering-item > p:nth-child(2) {
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+footer {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(3, 3, 3, 60%);
 }
